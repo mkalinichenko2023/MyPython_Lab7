@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Книги</title>
+</head>
+<body>
+    <h1>Лабораторная работа N6</h1>
+	<table border="1" cellspacing="0" cellpadding="10">
+	<caption style="font-size: 30px">Список книг, которые я планирую прочесть</caption>
+	<tr align="center"><th>Название</th><th>Автор</th><th>Кол-во страниц</th><th>Статус</th><th>Оценка</th></tr>
+        {% for book in books %}
+        <tr align="left"><th>{{book['BookName']}}</th><th>{{book['Author']}}</th><th>{{book['PagesCnt']}}</th><th>{{book['BookStatus']}}</th><th>{{book['BookBall']}}</th></tr>
+        {% endfor %}
+	</table>
+</body>
+</html>
